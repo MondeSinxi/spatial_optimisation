@@ -1,5 +1,3 @@
-import sys
-import gmaps
 import requests
 import json
 import re
@@ -94,7 +92,7 @@ def run():
     best_route_addr = [addresses[r] for r in route]
     print('The optimimal route is as follows:')
     for i, ba in enumerate(best_route_addr):
-          print(i,+ 1':' , ba)
+          print(i+1, ':' , ba)
     print('Expected travel time for the optimal tour: {} units'.format(total_time)) # mapbox time units not documented
 
 if __name__ == "__main__":
